@@ -1,0 +1,33 @@
+import React from "react";
+import styled from "styled-components";
+
+interface IFuncProps {}
+
+const StyledFunc = styled.div``;
+
+const Func: React.FC<IFuncProps> = (config: IFuncProps): JSX.Element => {
+  return <StyledFunc></StyledFunc>;
+};
+
+export default Func;
+
+import React, { memo } from "react";
+import { IIconProps } from "../global/types";
+
+const engineeringIcon: React.FC<IIconProps> = ({
+  width,
+  height,
+  color,
+}: IIconProps): JSX.Element => {
+return (
+
+)
+}
+
+export default memo(engineeringIcon);
+
+      width={width ? width : 32}
+      height={height ? height : 32}
+      viewBox={width && height ? `0 0 ${width} ${height}` : "0 0 32 32"}
+
+{color ? color : "#00A6FB"}
